@@ -68,9 +68,9 @@ export default {
     mapOptions: Object,
     strokeColor: {type: String, default: 'E4E4E4'},
     defaultFillColor: {type: String, default: "#E2E2E2"},
-    currentStrokeColor: {type: String, default:'666'},
-    strokeWidth: {type: Number, default: 2},
-    currentStrokeWidth: {type: Number, default: 5},
+    currentStrokeColor: {type: String, default:'a1a1a1'},
+    strokeWidth: {type: Number, default: 1},
+    currentStrokeWidth: {type: Number, default: 2},
     optionsStyle: {type: Object, default: () => ({})}
   },
   mounted() {
