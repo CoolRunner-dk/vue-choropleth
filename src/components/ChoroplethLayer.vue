@@ -89,6 +89,7 @@ export default {
           let item = data.find(x => x[this.idKey] == itemGeoJSONID)
           if (!item) {
             return {
+              color: "#E4E4E4",
               fillColor: this.defaultFillColor,
               weight: this.strokeWidth
             }
@@ -96,6 +97,7 @@ export default {
           let valueParam = Number(item[this.value.key])
           if (!validNumber(valueParam)) {
             return {
+              color: "#E4E4E4",
               fillColor: this.defaultFillColor,
               weight: this.strokeWidth
             }
