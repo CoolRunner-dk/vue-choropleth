@@ -67,6 +67,7 @@ export default {
     zoom: Number,
     mapOptions: Object,
     strokeColor: {type: String, default: 'fff'},
+    defaultFillColor: {type: String, default: 'white'},
     currentStrokeColor: {type: String, default:'666'},
     strokeWidth: {type: Number, default: 2},
     currentStrokeWidth: {type: Number, default: 5},
@@ -88,14 +89,14 @@ export default {
           let item = data.find(x => x[this.idKey] == itemGeoJSONID)
           if (!item) {
             return {
-              color: "white",
+              color: this.defaultFillColor,
               weight: this.strokeWidth
             }
           }
           let valueParam = Number(item[this.value.key])
           if (!validNumber(valueParam)) {
             return {
-              color: "white",
+              color: this.defaultFillColor,
               weight: this.strokeWidth
             }
           }
