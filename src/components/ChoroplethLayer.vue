@@ -1,6 +1,6 @@
 <template>
   <div>
-    <l-geo-json :geojson="geojsonData.geojson" :options="geojsonOptions" ref="geolayer"></l-geo-json>
+    <l-geo-json :geojson="geojsonData.geojson" :options="geojsonOptions" :option-style="optionsStyle" ref="geolayer"></l-geo-json>
     <slot :currentItem="currentItem" :unit="value.metric" :min="min" :max="max"></slot>
   </div>
 </template>
@@ -69,7 +69,8 @@ export default {
     strokeColor: {type: String, default: 'fff'},
     currentStrokeColor: {type: String, default:'666'},
     strokeWidth: {type: Number, default: 2},
-    currentStrokeWidth: {type: Number, default: 5}
+    currentStrokeWidth: {type: Number, default: 5},
+    optionsStyle: {type: Object, default: () => ({})}
   },
   mounted() {
     if (this.$parent._isMounted) {
