@@ -106,7 +106,6 @@ export default {
             weight: this.strokeWidth,
             opacity: 1,
             color: `#${this.strokeColor}`,
-            dashArray: "3",
             fillOpacity: 0.7,
             fillColor: getColor(valueParam, this.colorScale, min, max)
           }
