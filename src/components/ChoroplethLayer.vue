@@ -66,7 +66,7 @@ export default {
     mapStyle: Object,
     zoom: Number,
     mapOptions: Object,
-    strokeColor: {type: String, default: 'fff'},
+    strokeColor: {type: String, default: 'E4E4E4'},
     defaultFillColor: {type: String, default: "#E2E2E2"},
     currentStrokeColor: {type: String, default:'666'},
     strokeWidth: {type: Number, default: 2},
