@@ -67,7 +67,7 @@ export default {
     zoom: Number,
     mapOptions: Object,
     strokeColor: {type: String, default: 'fff'},
-    defaultFillColor: {type: String, default: 'white'},
+    defaultFillColor: {type: String, default: "#E2E2E2"},
     currentStrokeColor: {type: String, default:'666'},
     strokeWidth: {type: Number, default: 2},
     currentStrokeWidth: {type: Number, default: 5},
@@ -90,7 +90,7 @@ export default {
           if (!item) {
             return {
               color: "#E4E4E4",
-              fillColor: this.defaultFillColor,
+              fillColor: "#E2E2E2",
               weight: this.strokeWidth
             }
           }
@@ -98,7 +98,7 @@ export default {
           if (!validNumber(valueParam)) {
             return {
               color: "#E4E4E4",
-              fillColor: this.defaultFillColor,
+              fillColor: "#E2E2E2",
               weight: this.strokeWidth
             }
           }
